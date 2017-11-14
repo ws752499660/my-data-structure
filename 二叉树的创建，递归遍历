@@ -1,0 +1,81 @@
+#include<iostream>
+using namespace std;
+
+typedef struct btnode
+{
+	int date;
+	btnode *lc,*rc;
+}*bitree;
+
+void initbitree(bitree &b)
+{
+	btnode *t=new btnode;
+	t->date=0;
+	t->lc=NULL;
+	t->rc=NULL;
+	b=t;
+}
+
+void creatbt(bitree &b)
+{
+	char c=getchar();
+	if(c=='#')
+		b=NULL;
+	else
+	{
+		int t=c-'0';
+		b=new btnode;
+		b->date=t;
+		creatbt(b->lc);
+		creatbt(b->rc);
+	}
+}
+
+void visit(btnode *b)
+{
+	cout<<b->date<<" ";
+}
+
+void pretraver(bitree &b) //前序二叉树递归遍历
+{
+	if(b)
+	{
+		visit(b);
+			pretraver(b->lc);
+			pretraver(b->rc);
+	}
+}
+
+void midtraver(bitree &b)//中序二叉树递归遍历
+{
+	if(b)
+	{
+		midtraver(b->lc);
+		visit(b);
+		midtraver(b->rc);
+	}
+}
+
+void afttraver(bitree &b)//后序二叉树递归遍历
+{
+	if(b)
+	{
+		afttraver(b->lc);
+		afttraver(b->rc);
+		visit(b);
+	}
+}
+
+int main()
+{
+	bitree b;
+	initbitree(b);
+	creatbt(b);
+	pretraver(b);
+	cout<<endl;
+	midtraver(b);
+	cout<<endl;
+	afttraver(b);
+	cout<<endl;
+	return 0;
+}
