@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 using namespace std;
 
 typedef struct btnode
@@ -66,7 +66,7 @@ void afttraver(bitree &b)//后序二叉树递归遍历
 	}
 }
 
-int main()
+int main() //主函数
 {
 	bitree b;
 	initbitree(b);
