@@ -14,7 +14,7 @@ void init(linklist &l)
     l=t;
 }
 
-void adddata(linklist &l,int i)
+void adddata(linklist &l,int i)//带头结点
 {
     lsnode *tail=l;
     lsnode *p;
