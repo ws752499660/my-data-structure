@@ -50,15 +50,11 @@ void inthread(bitree &b,btnode* &pre) //中序线索化二叉树（核心递归�
             b->ltype=1;
             b->lk=pre;
         }
-        else
-            b->ltype=0;
         if(!pre->rk)
         {
             pre->rtype=1;
             pre->rk=b;
         }
-        else
-            pre->rtype=0;
         pre=b;
         inthread(b->rk,pre);
     }
@@ -66,14 +62,6 @@ void inthread(bitree &b,btnode* &pre) //中序线索化二叉树（核心递归�
 
 void thread(bitree &thrt,bitree &b)  //中序线索化二叉树（头结点部分）
 {
-    if(b->lk)
-        b->ltype=0;
-    else
-        b->ltype=1;
-    if(b->rk)
-        b->rtype=0;
-    else
-        b->rtype=1;
     thrt=new btnode;
     thrt->ltype=0;
     thrt->rtype=1;
@@ -98,7 +86,7 @@ void threadtravel(bitree tb)
     while(t!=tb)
     {
         while(t->ltype==0)
-        {t=t->lk;}
+            t=t->lk;
         visit(t);
         while(t->rtype==1 && t->rk!=tb)
         {
