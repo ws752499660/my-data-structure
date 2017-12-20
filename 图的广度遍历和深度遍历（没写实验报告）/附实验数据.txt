@@ -1,0 +1,6 @@
+﻿2 beijing 1 2
+2 shanghai 0 3
+2 chengdu 0 3
+3 guangzhou 2 4 1
+1 hefei 3
+#
