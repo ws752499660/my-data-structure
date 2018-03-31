@@ -22,7 +22,7 @@ void initbitree(bitree &b)
 	b=t;
 }
 
-void creatbt(bitree &b)
+void creatbt(bitree &b)	//œ»–Ú¥¥Ω®
 {
 	char c=getchar();
 	if(c=='#')

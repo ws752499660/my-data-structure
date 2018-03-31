@@ -4,3 +4,83 @@
 3 guangzhou 2 4 1
 1 hefei 3
 #
+
+3 beijing 2 21 18
+2 huhehaote 1 3
+4 lanzhou 2 4 5 6
+1 wulumuqi 3
+1 xining 3
+3 xian 3 7 18
+3 chengdu 6 8 9
+2 kunming 7 9
+4 guiyang 7 8 10 12
+3 liuzhou 9 11 12
+1 nanning 10
+5 zhuzhou 9 10 13 15 17
+2 guangzhou 12 14
+1 shenzhen 13
+3 nanchang 12 16 20
+1 fuzhou 15
+2 wuhan 12 18
+4 zhengzhou 1 6 17 19
+3 xuzhou 18 20 21
+2 shanghai 15 19
+3 tianjing 1 19 22
+3 shenyang 21 23 24
+1 dalian 22
+2 changchun 22 25
+1 haerbin 24
+#
+
+输出：
+beijing 18 21 2
+zhengzhou 19 17 6 1
+xuzhou 21 20 18
+tianjing 22 19 1
+shenyang 24 23 21
+changchun 25 22
+haerbin 24
+dalian 22
+shanghai 19 15
+nanchang 20 16 12
+fuzhou 15
+zhuzhou 17 15 13 10 9
+wuhan 18 12
+guangzhou 14 12
+shenzhen 13
+liuzhou 12 11 9
+nanning 10
+guiyang 12 10 8 7
+kunming 9 7
+chengdu 9 8 6
+xian 18 7 3
+lanzhou 6 5 4 2
+xining 3
+wulumuqi 3
+huhehaote 3 1
+
+beijing 18 21 2
+zhengzhou 19 17 6 1
+tianjing 22 19 1
+huhehaote 3 1
+lanzhou 6 5 4 2
+xian 18 7 3
+xining 3
+wulumuqi 3
+chengdu 9 8 6
+guiyang 12 10 8 7
+kunming 9 7
+zhuzhou 17 15 13 10 9
+liuzhou 12 11 9
+nanning 10
+wuhan 18 12
+nanchang 20 16 12
+guangzhou 14 12
+shenzhen 13
+shanghai 19 15
+fuzhou 15
+xuzhou 21 20 18
+shenyang 24 23 21
+changchun 25 22
+dalian 22
+haerbin 24
